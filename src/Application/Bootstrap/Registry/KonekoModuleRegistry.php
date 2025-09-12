@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Koneko\VuexyAdmin\Application\Bootstrap\Registry;
+namespace Koneko\KonekoVuexyAdmin\Application\Bootstrap\Registry;
 
 use Illuminate\Support\Collection;
-use Koneko\VuexyAdmin\Application\Bootstrap\KonekoModule;
+use Koneko\KonekoVuexyAdmin\Application\Bootstrap\KonekoModule;
 
 class KonekoModuleRegistry
 {

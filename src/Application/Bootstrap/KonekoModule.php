@@ -173,7 +173,7 @@ class KonekoModule
 
     public static function fromModuleDirectory(string $dirPath): ?self
     {
-        foreach (['vuexy-admin.module.php', 'koneko-vuexy.module.php'] as $fileName) {
+        foreach (['koneko-vuexy-admin.module.php', 'koneko-vuexy.module.php'] as $fileName) {
             $file = $dirPath . '/' . $fileName;
             if (file_exists($file)) {
                 return self::fromModuleFile($file);

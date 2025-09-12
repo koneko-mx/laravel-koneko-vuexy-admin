@@ -20,7 +20,7 @@
   "require": {
     "ext-json": "*",
     "ext-mbstring": "*",
-    "php": "^8.2",
+    "php": "^8.3",
     "laravel/framework": "^11.31",
     "laravel/fortify": "^1.25",
     "laravel/sanctum": "^4.0",

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Koneko\KonekoVuexyAdmin\Application\UI\Avatar;
 
 use Illuminate\Support\Facades\Storage;
+use Intervention\Image\Image;
 use Intervention\Image\ImageManager;
 use Intervention\Image\Typography\FontFactory;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
@@ -32,7 +33,7 @@ class AvatarInitialsService
         ];
         $this->fontSizeRatio = (float) env('VUEXY_AVATAR_INITIALS_FONT_SIZE_RATIO', 0.4);
         $this->fallbackText = env('VUEXY_AVATAR_INITIALS_FALLBACK_TEXT', 'NA');
-        $this->fontPath = dirname(__DIR__, 4) . '/storage/fonts/OpenSans-Bold.ttf';
+        $this->fontPath = dirname(__DIR__, 4) . '/resources/fonts/OpenSans-Bold.ttf';
     }
 
     public function getAvatarImage(
@@ -80,7 +81,7 @@ class AvatarInitialsService
         ]));
     }
 
-    protected function createAvatarImage(array $config): \Intervention\Image\Image
+    protected function createAvatarImage(array $config): Image
     {
         $manager = new ImageManager(config('image.driver', 'gd'));
 
