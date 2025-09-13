@@ -3,7 +3,10 @@
 @endphp
 
 <!-- Laravel Helper Functions -->
-@vite('vendor/koneko/laravel-koneko-vuexy-admin/resources/assets/vendor/js/helpers.js')
+@vite([
+    'vendor/koneko/laravel-koneko-vuexy-admin/resources/assets/vendor/fonts/vendor-icons.js',
+    'vendor/koneko/laravel-koneko-vuexy-admin/resources/assets/vendor/js/helpers.js',
+])
 
 @if ($configData['hasCustomizer'])
     <!--! Template customizer & Theme config files -->
