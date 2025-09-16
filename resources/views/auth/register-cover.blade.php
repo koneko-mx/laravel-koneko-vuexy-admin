@@ -17,7 +17,7 @@
     @vite([
         'vendor/koneko/laravel-koneko-vuexy-admin/resources/scss/pages/page-auth.scss'
     ])
-@endsection
+@endpush
 
 @section('vendor-script')
     @vite([
