@@ -255,16 +255,12 @@ return [
 
     // 📁 Publicar archivos
     'publishedFiles' => [
-        'config' => [
-            'config/fortify.php' => config_path('fortify.php'),
-            'config/image.php'   => config_path('image.php'),
-        ],
-        'assets' => [
-            'resources/public' => public_path('vendor/koneko-vuexy-admin/'),
-        ],
-        'seeder-samples' => [
-            'database/data/seeder_samples' => base_path('database/data/koneko-vuexy-admin/seeder_samples/'),
-        ],
+        'assets'              => ['resources/public'   => public_path('vendor/koneko/vuexy-admin/')],
+        'auth-config'         => ['config/image.php'   => config_path('image.php')],
+        'fortify-config'      => ['config/fortify.php' => config_path('fortify.php')],
+        'image-config'        => ['config/image.php'   => config_path('image.php')],
+        'koneko_media-config' => ['config/koneko_media.php' => config_path('koneko_media.php')],
+        'seeder-samples'      => ['database/data/seeder_samples' => base_path('database/data/koneko-vuexy-admin/seeder_samples/')],
     ],
 
     // 🛠 Comandos Artisan
